@@ -44,49 +44,49 @@ int** checkCells(int** arr, int** arr2, int width, int height){
 			}
 
 			//bot corner right
-			else if(i == (height - 1) && j == (width - 1)){
+			if(i == (height - 1) && j == (width - 1)){
 				arr2[i][j] = 0;
 
 			}
 
 			//top corner right
-			else if(i == 0 && j == (width - 1)){
+			if(i == 0 && j == (width - 1)){
 				arr2[i][j] = 0;
 
 			}
 
 			//bot corner left
-			else if(i == (height - 1) && j == 0){
+			if(i == (height - 1) && j == 0){
 				arr2[i][j] = 0;
 
 			}
 
 			//wall left
-			else if((i > 0 && i < (height - 1)) && j == 0){
+			if((i > 0 && i < (height - 1)) && j == 0){
 				arr2[i][j] = 0;
 
 			}
 
 			//wall right
-			else if((i > 0 && i < (height - 1)) && j == (width - 1)){
+			if((i > 0 && i < (height - 1)) && j == (width - 1)){
 				arr2[i][j] = 0;
 
 			}
 
 			//wall top
-			else if((j > 0 && j < (width - 1)) && i == 0){
+			if((j > 0 && j < (width - 1)) && i == 0){
 				arr2[i][j] = 0;
 
 			}
 
 			//wall bot
-			else if((j > 0 && j < (width - 1)) && i == (height - 1)){
+			if((j > 0 && j < (width - 1)) && i == (height - 1)){
 				arr2[i][j] = 0;
 
 			}
 
 			//other cells
-			else if((i > 0 && i < (height - 1)) && (j > 0 && j < (width - 1))){
+			if((i > 0 && i < (height - 1)) && (j > 0 && j < (width - 1))){
 
 				if(arr[i][j] == 1){
 					
